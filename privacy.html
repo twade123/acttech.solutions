@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · Trevor</title>
+<meta name="description" content="How Trevor accesses, uses, stores and shares Google user data, including that its AI agents send Google data to Anthropic for processing.">
+<link rel="icon" href="data:,">
+<link rel="canonical" href="https://acttech.solutions/privacy.html">
+<style>
+:root{--paper:#f5f1e8;--paper-2:#ede7da;--ink:#1d1b18;--muted:#57514a;--rule:#d6cdbd;--accent:#9e3417;--accent-wash:#f1dfd3;--serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;--text:Charter,"Bitstream Charter","Sitka Text",Cambria,Georgia,serif;--mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:1.0625rem/1.65 var(--text);background-image:radial-gradient(circle at 12% -10%,#fffaf0 0,transparent 45%),repeating-linear-gradient(0deg,transparent 0 31px,rgba(29,27,24,.025) 31px 32px)}
+a{color:var(--accent);text-underline-offset:.18em;text-decoration-thickness:1px}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:2px}
+.skip{position:absolute;left:-999px;top:0;background:var(--ink);color:var(--paper);padding:.6rem 1rem;z-index:10}
+.skip:focus{left:1rem;top:1rem}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.wrap{max-width:70rem;margin:0 auto;padding:0 1.5rem}
+header.site{border-bottom:1px solid var(--rule)}
+header.site .wrap{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;padding-top:1.25rem;padding-bottom:1rem;flex-wrap:wrap}
+.mark{font:600 1.5rem/1 var(--serif);letter-spacing:.01em;color:var(--ink);text-decoration:none}
+.mark span{color:var(--accent)}
+nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1.5rem;font-size:.95rem}
+nav a{color:var(--ink);text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px}
+nav a:hover,nav a[aria-current=page]{border-bottom-color:var(--accent)}
+nav a[aria-current=page]{color:var(--accent)}
+.hero{display:grid;grid-template-columns:minmax(0,1fr) 19rem;gap:3rem;padding:4.5rem 0 3rem;align-items:end}
+.eyebrow{font:500 .78rem/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 1.25rem}
+h1{font:400 clamp(3.4rem,10vw,7.5rem)/.9 var(--serif);letter-spacing:-.02em;margin:0}
+h1 em{font-style:italic;color:var(--accent)}
+.lede{font-size:1.3rem;line-height:1.5;max-width:38rem;margin:1.75rem 0 0}
+.margin-note{border-left:2px solid var(--accent);padding:.25rem 0 .25rem 1.25rem;font-size:.95rem;color:var(--muted)}
+.margin-note strong{color:var(--ink);font-weight:600}
+h2{font:400 2.1rem/1.15 var(--serif);margin:0 0 1rem;letter-spacing:-.01em}
+h3{font:600 1.1rem/1.3 var(--serif);margin:0}
+section{padding:3rem 0;border-top:1px solid var(--rule)}
+.path{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin:2rem 0 0;padding:0;list-style:none;counter-reset:node}
+.path li{position:relative;padding:1.5rem 1.5rem 1.5rem 0;counter-increment:node}
+.path li::before{content:"0" counter(node);font:500 .8rem/1 var(--mono);color:var(--accent);display:block;margin-bottom:1rem}
+.path li::after{content:"";position:absolute;top:1.9rem;left:2.2rem;right:1.75rem;height:1px;background:var(--ink)}
+.path li:last-child::after{right:auto;width:0}
+.path li:not(:last-child) .node::after{content:"\2192";position:absolute;right:1.5rem;top:1.25rem;font-family:var(--serif);background:var(--paper);padding:0 .25rem}
+.path p{margin:.4rem 0 0;color:var(--muted);font-size:.95rem;max-width:18rem}
+.ledger{width:100%;border-collapse:collapse;margin-top:1.5rem;font-size:.97rem}
+.ledger caption{text-align:left;color:var(--muted);font-size:.92rem;padding-bottom:.75rem}
+.ledger th,.ledger td{text-align:left;vertical-align:top;padding:1rem .75rem 1rem 0;border-bottom:1px solid var(--rule)}
+.ledger thead th{font:500 .74rem/1.2 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);border-bottom:1px solid var(--ink)}
+.ledger tbody th{font:600 1.05rem/1.3 var(--serif);width:13rem}
+.ledger tbody tr:hover{background:rgba(255,255,255,.45)}
+.ledger code{font:.8rem/1.5 var(--mono);color:var(--ink);background:var(--paper-2);padding:.1rem .35rem;border-radius:2px;display:inline-block;margin:0 .25rem .25rem 0;word-break:break-all}
+.tag{font:500 .7rem/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;padding:.25rem .4rem;border:1px solid currentColor;border-radius:2px;white-space:nowrap}
+.tag.r{color:var(--accent)}
+.statement{background:var(--ink);color:var(--paper);padding:2.5rem;margin:0;position:relative}
+.statement::before{content:"\201C";position:absolute;top:-.15em;left:1.25rem;font:6rem/1 var(--serif);color:var(--accent)}
+.statement p{font:400 1.45rem/1.45 var(--serif);margin:0 0 1rem;max-width:46rem}
+.statement p.small{font:400 1rem/1.6 var(--text);color:#d9d2c4;margin:0;overflow-wrap:anywhere}
+.cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2.5rem}
+.card{border-top:2px solid var(--ink);padding-top:1rem}
+.card p{margin:.5rem 0 0}
+footer.site{border-top:1px solid var(--rule);padding:2rem 0 3rem;font-size:.92rem;color:var(--muted)}
+footer.site .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+footer.site ul{list-style:none;margin:0;padding:0;display:flex;gap:1.25rem}
+.reveal{animation:rise .8s cubic-bezier(.2,.7,.2,1) both}
+.d1{animation-delay:.08s}.d2{animation-delay:.18s}.d3{animation-delay:.3s}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.reveal{animation:none}}
+@media (max-width:52rem){.hero{grid-template-columns:1fr;gap:2rem;padding-top:3rem}.cols{grid-template-columns:1fr}.path{grid-template-columns:1fr}.path li::after,.path li .node::after{display:none}.ledger thead{display:none}.ledger caption{display:block}.ledger,.ledger tbody,.ledger tr,.ledger th,.ledger td{display:block;width:auto}.ledger tbody th{padding-bottom:.25rem;border:0}.ledger td{border:0;padding:.25rem 0}.ledger tr{border-bottom:1px solid var(--rule);padding:.75rem 0}}
+@media print{body{background:#fff}.statement{background:#fff;color:#000;border:1px solid #000}.statement p.small{color:#000}}
+.doc{display:grid;grid-template-columns:14rem minmax(0,1fr);gap:3.5rem;padding:3.5rem 0 4rem}
+.toc{position:sticky;top:1.5rem;align-self:start;font-size:.92rem}
+.toc p{font:500 .74rem/1.2 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 .75rem}
+.toc ol{margin:0;padding:0 0 0 1.25rem}
+.toc li{margin:.35rem 0}
+.toc a{color:var(--ink);text-decoration:none}
+.toc a:hover{color:var(--accent);text-decoration:underline}
+.body h1{font-size:clamp(2.8rem,7vw,4.75rem);margin-bottom:.75rem}
+.meta{font:500 .8rem/1.4 var(--mono);color:var(--muted);letter-spacing:.06em;margin:0 0 2rem}
+.body section{padding:2.25rem 0}
+.body h2{font-size:1.75rem}
+.body p,.body li{max-width:44rem}
+.body ul{padding-left:1.25rem}
+.body li{margin:.4rem 0}
+.callout{border-left:3px solid var(--accent);background:var(--accent-wash);padding:1rem 1.25rem;margin:1.25rem 0}
+.callout p{margin:0}
+.body .statement p{font-size:1.25rem}
+@media (max-width:52rem){.doc{grid-template-columns:minmax(0,1fr);gap:1.5rem}.toc{position:static}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site">
+  <div class="wrap">
+    <a class="mark" href="./">Trevor<span>.</span></a>
+    <nav aria-label="Main">
+      <ul><li><a href="./">Home</a></li><li><a href="privacy.html" aria-current="page">Privacy Policy</a></li><li><a href="terms.html">Terms of Service</a></li></ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap doc">
+    <nav class="toc" aria-label="On this page">
+      <p>On this page</p>
+      <ol><li><a href="#summary">Summary</a></li><li><a href="#access">What Google data Trevor accesses</a></li><li><a href="#use">How Trevor uses it</a></li><li><a href="#sharing">How Trevor shares it</a></li><li><a href="#storage">Where Trevor stores it</a></li><li><a href="#choices">Your choices</a></li><li><a href="#limited-use">Limited Use</a></li><li><a href="#changes">Changes</a></li><li><a href="#contact">Contact</a></li></ol>
+    </nav>
+    <article class="body">
+      <p class="eyebrow">Trevor</p>
+      <h1>Privacy Policy<em>.</em></h1>
+      <p class="meta">Last updated 4 October 2026</p>
+      <p>This policy explains how Trevor accesses, uses, stores and shares data from your Google Account. Trevor is an app operated by ACT Tech Solutions LLC. Questions go to <a href="mailto:info@timothyrwade.com">info@timothyrwade.com</a>.</p>
+      <div class="callout"><p><strong>Trevor's Google connection is in development and not yet available.</strong> Nobody can sign in to Trevor with Google today. This policy describes how Trevor will access, use, store and share Google data once the connection is available.</p></div>
+
+      <section id="summary" aria-labelledby="summary-h">
+        <h2 id="summary-h">1. Summary</h2>
+        <ul>
+          <li>Trevor will access only the Google services and permissions listed in section 2, and only after you sign in with Google and grant them. None of them is available yet.</li>
+          <li><strong>When Trevor's AI agents read your Google data, they send it to Anthropic, an AI model provider, for processing.</strong> Your Google data does not stay only on your own computer.</li>
+          <li>Trevor does not sell your Google data, does not use it for advertising, and does not use it to train AI models. On the Claude account Trevor's agents use, Anthropic's model-improvement setting (&ldquo;Help improve Claude&rdquo;) is off. Anthropic's terms still let it use sessions its systems flag for safety review, as sections 3 and 4 explain.</li>
+          <li>You can remove Trevor's access at any time from your Google Account.</li>
+        </ul>
+      </section>
+
+      <section id="access" aria-labelledby="access-h">
+        <h2 id="access-h">2. What Google data Trevor accesses</h2>
+        <p>Trevor's Google connection is in development and not yet available, so Trevor cannot use any of the permissions below today. Once it is available, Google will ask you to grant Trevor these permissions (scopes) when you sign in, and Trevor will be able to reach only the data they cover.</p>
+        <table class="ledger">
+          <caption>Each row is one Google service, what its permissions are for, and the exact permissions Trevor plans to ask for. Scopes start <code>https://www.googleapis.com/auth/</code> unless shown in full. <span class="tag r">Restricted</span> marks the three scopes Google classes as restricted.</caption>
+          <thead><tr><th scope="col">Service</th><th scope="col">What the permission is for</th><th scope="col">Google permissions</th></tr></thead>
+          <tbody>
+          <tr><th scope="row">Google Sign-In</th><td><span class="tag">Not yet available</span> For seeing your name, email address and basic profile, to sign you in.</td><td><code>openid</code><code>userinfo.email</code><code>userinfo.profile</code></td></tr>
+          <tr><th scope="row">Gmail</th><td><span class="tag">Not yet available</span> For reading, composing and sending email, creating labels, and changing the labels on messages. This permission does not allow immediately and permanently deleting email, bypassing the trash.</td><td><code>gmail.modify</code> <span class="tag r">Restricted</span></td></tr>
+          <tr><th scope="row">Google Calendar</th><td><span class="tag">Not yet available</span> For viewing and editing events on your calendars, seeing availability on calendars you have access to in order to suggest a time, and seeing the list of calendars you subscribe to.</td><td><code>calendar.events</code><code>calendar.events.freebusy</code><code>calendar.calendarlist.readonly</code></td></tr>
+          <tr><th scope="row">Google Drive</th><td><span class="tag">Not yet available</span> For viewing, listing and downloading your Drive files and seeing who a file is shared with, and for creating new files, copying files, and changing files that you open with Trevor or share with it.</td><td><code>drive.readonly</code> <span class="tag r">Restricted</span><br><code>drive.file</code></td></tr>
+          <tr><th scope="row">Google Docs</th><td><span class="tag">Not yet available</span> For seeing, editing, creating and deleting your Google Docs documents.</td><td><code>documents</code></td></tr>
+          <tr><th scope="row">Google Sheets</th><td><span class="tag">Not yet available</span> For seeing, editing, creating and deleting your Google Sheets spreadsheets.</td><td><code>spreadsheets</code></td></tr>
+          <tr><th scope="row">Google Slides</th><td><span class="tag">Not yet available</span> For seeing, editing, creating and deleting your Google Slides presentations.</td><td><code>presentations</code></td></tr>
+          <tr><th scope="row">Google Forms</th><td><span class="tag">Not yet available</span> For creating and changing forms, and reading their responses, for forms Trevor creates or that you pick for it.</td><td><code>drive.file</code></td></tr>
+          <tr><th scope="row">Google Meet</th><td><span class="tag">Not yet available</span> For creating meeting spaces and reading details about them, reading details about meeting spaces you have access to, and downloading meeting recordings and transcripts from Google Drive.</td><td><code>meetings.space.created</code><code>meetings.space.readonly</code><code>drive.readonly</code></td></tr>
+          <tr><th scope="row">Google Chat</th><td><span class="tag">Not yet available</span> For viewing your Chat spaces, their members, and messages and reactions, composing and sending messages, and marking conversations read or unread.</td><td><code>chat.spaces.readonly</code><code>chat.memberships.readonly</code><code>chat.messages.readonly</code> <span class="tag r">Restricted</span><br><code>chat.messages.create</code><code>chat.users.readstate</code></td></tr>
+          <tr><th scope="row">Google Tasks</th><td><span class="tag">Not yet available</span> For creating, editing, organizing and deleting your tasks.</td><td><code>tasks</code></td></tr>
+          <tr><th scope="row">Google Contacts</th><td><span class="tag">Not yet available</span> For creating contacts, searching your contacts, and searching your organization's directory (read only).</td><td><code>contacts</code><code>directory.readonly</code></td></tr>
+          <tr><th scope="row">Google Analytics</th><td><span class="tag">Not yet available</span> For reading your Google Analytics data (read only).</td><td><code>analytics.readonly</code></td></tr>
+          <tr><th scope="row">Google Search Console</th><td><span class="tag">Not yet available</span> For reading your Search Console data (read only).</td><td><code>webmasters.readonly</code></td></tr>
+          <tr><th scope="row">Google Ads</th><td><span class="tag">Not yet available</span> For accessing the Google Ads accounts you connect, through the Google Ads API.</td><td><code>adwords</code></td></tr>
+          <tr><th scope="row">YouTube</th><td><span class="tag">Not yet available</span> For uploading videos and posting comments on your own channel.</td><td><code>youtube.force-ssl</code></td></tr>
+          <tr><th scope="row">YouTube Analytics</th><td><span class="tag">Not yet available</span> For viewing YouTube Analytics reports for your YouTube content.</td><td><code>yt-analytics.readonly</code></td></tr>
+          <tr><th scope="row">Google Business Profile</th><td><span class="tag">Not yet available</span> Not requested yet. Trevor will ask for this permission only after Google approves its access to the Business Profile APIs.</td><td><code>business.manage</code></td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="use" aria-labelledby="use-h">
+        <h2 id="use-h">3. How Trevor uses your Google data</h2>
+        <p>Trevor will use your Google data only to provide the features shown on its <a href="./">homepage</a>: once its Google connection is available, its agents will read, create and change data in the Google services you connected, for the purposes listed in section 2. That connection is in development and not yet available.</p>
+        <p>Trevor does not:</p>
+        <ul>
+          <li>sell your Google data, or transfer it to advertising platforms, data brokers or information resellers;</li>
+          <li>use or transfer your Google data for serving ads, including retargeting, personalized or interest-based advertising;</li>
+          <li>use or transfer your Google data to determine credit-worthiness or for lending purposes;</li>
+          <li>use or transfer your Google data to create, train or improve any machine learning or AI model, including foundational models.</li>
+        </ul>
+        <p>Trevor's agents run on Anthropic's AI models through a consumer Claude Max account. Anthropic's model-improvement setting (&ldquo;Help improve Claude&rdquo;) is off on that account. What Anthropic does with data it receives is governed by Anthropic's own terms, not by Trevor. Those terms say Anthropic will use chats and coding sessions, including to improve its models, if &ldquo;Your conversations are flagged for safety review (in which case we may use or analyze them to improve our ability to detect and enforce our Usage Policy, including training models for use by our Safeguards team, consistent with Anthropic’s safety mission)&rdquo;. Source: Anthropic, &ldquo;Is my data used for model training?&rdquo;, privacy.claude.com/en/articles/10023580, dated March 16, 2026.</p>
+      </section>
+
+      <section id="sharing" aria-labelledby="sharing-h">
+        <h2 id="sharing-h">4. How Trevor shares your Google data</h2>
+        <div class="callout"><p><strong>With Anthropic, for processing.</strong> Trevor's agents run on Anthropic's AI models. When an agent reads your Gmail, Drive, Chat or other Google content to work on a task, that content goes to Anthropic's model servers as input, so the model can process it.</p></div>
+        <p>The agents use a consumer Claude Max account, with Anthropic's model-improvement setting (&ldquo;Help improve Claude&rdquo;) turned off. Anthropic's terms for that account make an exception for sessions its systems flag for safety review: Anthropic says it will use them, including to improve its models, if &ldquo;Your conversations are flagged for safety review (in which case we may use or analyze them to improve our ability to detect and enforce our Usage Policy, including training models for use by our Safeguards team, consistent with Anthropic’s safety mission)&rdquo;. Source: Anthropic, &ldquo;Is my data used for model training?&rdquo;, privacy.claude.com/en/articles/10023580, dated March 16, 2026. How long Anthropic keeps the data is in section 5.</p>
+        <p>Trevor does not transfer your Google data to anyone else, except:</p>
+        <ul>
+          <li>for security purposes (for example, investigating abuse);</li>
+          <li>to comply with applicable law; or</li>
+          <li>as part of a merger, acquisition or sale of assets, and only after getting your explicit prior consent.</li>
+        </ul>
+        <p>No person reads your Google data unless you first agree to it for specific messages, files or other data, or it is necessary for security purposes (for example, investigating a bug or abuse), or it is necessary to comply with applicable law.</p>
+      </section>
+
+      <section id="storage" aria-labelledby="storage-h">
+        <h2 id="storage-h">5. Where Trevor stores your Google data</h2>
+        <p>This section describes what Trevor keeps once its Google connection is available.</p>
+        <ul>
+          <li>Trevor runs on your own Mac. Running Trevor for a company, on our server, is planned and not yet available. Everything below is kept on the machine where Trevor runs.</li>
+          <li>Trevor keeps the sign-in tokens Google issues to it in an encrypted credential store, one record for each person and each connection (one for Google Workspace, one for Google Ads).</li>
+          <li>One of the Google tools Trevor uses also keeps its own copy of your sign-in token in an unencrypted file on that machine, one file for each Google account.</li>
+          <li>When you disconnect a Google service, Trevor marks its token inactive. The encrypted token stays in the store until it is deleted.</li>
+          <li>Trevor's agents are Claude Code sessions. Claude Code saves a full record of each session, including any Google data the agent read, as plain-text files on that machine. Trevor currently sets Claude Code to keep those records for 36,500 days.</li>
+          <li>When an agent produces work from your Google data, such as a report, a note, a message in a project thread or a task comment, Trevor saves that work on the machine where it runs and keeps it until it is deleted. Trevor has no automatic deletion schedule for this work today.</li>
+          <li>Notes saved to Trevor's knowledge vault are kept in a version history, so a deleted note remains in that history.</li>
+          <li>The Google tool Trevor uses records your Google email address, the search terms agents use, and the names of files and documents they open in a log file on that machine. It has no automatic deletion.</li>
+          <li>The Google data an agent reads is sent to Anthropic, which runs the AI model. Trevor's agents use a consumer Claude Max account with model improvement turned off. Under Anthropic's terms for that account, Anthropic keeps that data for up to 30 days. If Anthropic's systems flag a session for violating its Usage Policy, Anthropic may keep the inputs and outputs for up to 2 years, and its trust and safety classification scores for up to 7 years. Anthropic's terms also say: &ldquo;In all cases, we may retain chats and coding sessions as required by law, to resolve disputes, or as necessary to combat violations of our Usage Policy.&rdquo; and &ldquo;We may anonymize or de-identify your personal data for research or statistical purposes, in which case we may retain this information for longer.&rdquo; Source: Anthropic, &ldquo;How long do you store my data?&rdquo;, privacy.claude.com/en/articles/10023548, dated July 1, 2026.</li>
+        </ul>
+      </section>
+
+      <section id="choices" aria-labelledby="choices-h">
+        <h2 id="choices-h">6. Your choices</h2>
+        <ul>
+          <li><strong>Remove Trevor's access.</strong> Go to your Google Account's linked apps page, select Trevor, and remove its access. In Google's words: "If you remove access, the app can't access your Google Account."</li>
+          <li><strong>Ask us to delete your data.</strong> Email <a href="mailto:info@timothyrwade.com">info@timothyrwade.com</a> to ask us to delete Google data Trevor holds about you. We will honor the request. Deletion is done by hand: on your request, we delete your Google data from the places listed in <a href="#storage">section 5</a> on the machine where Trevor runs. No automated tool does this today. A request cannot reach copies Anthropic keeps under its own terms (section 5), or earlier versions of notes kept in the knowledge vault's version history.</li>
+        </ul>
+      </section>
+
+      <section id="limited-use" aria-labelledby="lu-h">
+        <h2 id="lu-h">7. Google's Limited Use requirements</h2>
+        <blockquote class="statement">
+          <p>Trevor's use of information received from Google APIs will adhere to Google API Services User Data Policy, including the Limited Use requirements.</p>
+          <p>The use of information received from Google Workspace scopes will adhere to the Google User Data Policy, including the Limited Use requirements.</p>
+          <p class="small">Google API Services User Data Policy: developers.google.com/terms/api-services-user-data-policy. Google Workspace user data and developer policy: developers.google.com/workspace/workspace-api-user-data-developer-policy.</p>
+        </blockquote>
+      </section>
+
+      <section id="changes" aria-labelledby="changes-h">
+        <h2 id="changes-h">8. Changes to this policy</h2>
+        <p>When how Trevor uses Google data changes, we update this policy and the date at the top of this page.</p>
+      </section>
+
+      <section id="contact" aria-labelledby="contact-h">
+        <h2 id="contact-h">9. Contact</h2>
+        <p>ACT Tech Solutions LLC · <a href="mailto:info@timothyrwade.com">info@timothyrwade.com</a></p>
+      </section>
+    </article>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p>Trevor · Contact: <a href="mailto:info@timothyrwade.com">info@timothyrwade.com</a></p>
+    <ul>
+      <li><a href="./">Home</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="terms.html">Terms of Service</a></li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>
